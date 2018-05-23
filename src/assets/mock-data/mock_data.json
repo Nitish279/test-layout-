@@ -1,0 +1,9 @@
+{
+  "left_nav_content": [
+    {
+      "monitoring": "monitoring",
+      "reports": "reports",
+      "transactions": "transactions"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+<section id="subHeader">
+    <div class="container">
+        <div class="row ">
+            <div class="sub_header_left col-12 col-sm-12 col-md-5">
+                <div class="breadcrumb_block">
+                    <ol class="breadcrumb breadcrumb-right-arrow">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li id="subHeaderItem" class="breadcrumb-item"><a href="#">Link 1</a></li>
+                        <li id="leftNavItem" class="breadcrumb-item active"><a href="#">Link 2</a></li>
+                    </ol>
+                </div>
+
+                <div class="breadcrumb_title_block">
+                  <span id="toggleBtnLeftNav" class="toggle_btn_left_nav d-md-none">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                  </span>
+                  <h4>IDA Desk</h4>
+                  <span class="toggle_btn_sub_nav_item">
+                      <a href="#" ><div id="toggleBtnSubNavItem" class="fa fa-chevron-down rotate"></div></a>
+                  </span>
+              </div>
+              <div id="qwerty" class="asdfgh_block">
+                <ul class="list-unstyled" >
+                  <li class="nav-item active"><a class="nav-link" href="#monitoring">monitoring</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reports">transactions</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#transactions">reports</a></li>
+                </ul>
+              </div>
+                <!-- <h4 class="header-title">IDA Desk</h4>
+                <button class="header-content-toggler collapsed btn btn-link d-lg-none" type="button" data-toggle="collapse" data-target="#header-content">
+                        <span class="fas fa-angle-right fa-2x"></span>
+                    </button>
+                <div id="header_content" class="collapse navbar-collapse header_block">
+                    <div class="container">
+                        <ul class="nav list-unstyled">
+                            <li class="nav-item active"><a (click)="transformLeftNavData($event.target.text)" class="nav-link" href="#monitoring">monitoring</a></li>
+                            <li class="nav-item"><a (click)="transformLeftNavData($event.target.text)" class="nav-link" href="#reports">transactions</a></li>
+                            <li class="nav-item"><a (click)="transformLeftNavData($event.target.text)" class="nav-link" href="#transactions">reports</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div class="sub_header_right col-12 col-sm-12 col-md-7">
+                <ul class="list-unstyled">
+                    <li class="take_a_tour_blk">
+                        <a href="#">
+                            <h6 class="page-actions">Take A tour</h6>
+                            <span><i class="fa fa-play-circle fa-lg" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                    <li class="page-actions">
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                            </span>
+                            <h6>Add Page</h6>
+                        </a>
+                    </li>
+                    <li class="page-actions">
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                            </span>
+                            <h6>Add Widget</h6>
+                        </a>
+                    </li>
+                    <li class="page-actions">
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                            </span>
+                            <h6>Reset</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<section id="mainContainer">
+  <div class="container">
+      <div class="row">
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 text-center main_left_nav">
+                    <div class="list_expand_menu">
+                        <a title="toggle-menu" id="expand-menu" href="#">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul class="nav nav-tabs" role="navigation">
+                        <div *ngFor="let data of monitoringData">
+                        <li class="nav-item">
+                            <a href="#OneSpace" class="nav-link" aria-controls="">
+                            <i class="fa fa-{{data.icon}}" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">{{data.iconTitle}}</span>
+                            </a>
+                        </li>
+                      </div>
+                        <!-- <li class="nav-item">
+                            <a href="#productivity" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-binoculars" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Productivity</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#communications" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Communications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#collaboration" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Collaboration</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#news" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">News</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#analytics" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                            <i class="fa fa-plane" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Analytics</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#approvals" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            <span class="left_nav_txt_hidden">Approvals</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+              <div class="col-sm-12 col-md-9 col-lg-10">
+                  <div class="tab-content">
+
+                      <div class="tab-pane fade show active" id="ourSpace" role="tabpanel">
+                          <h1>ourSpace</h1>
+                          <p>Aenean pharetra risus quis placerat euismod. Praesent mattis lorem eget massa euismod sollicitudin. Donec porta nulla ut blandit vehicula. Mauris sagittis lorem nec mauris placerat, et molestie elit vehicula. Donec libero ex, condimentum et mi dapibus, euismod ornare ligula.</p>
+                          <p>In faucibus tempus ante, et tempor magna luctus id. Ut a maximus ipsum. Duis eu velit nec libero pretium pellentesque. Maecenas auctor hendrerit pulvinar. Donec sed tortor interdum, sodales elit vel, tempor turpis. In tristique vestibulum eros vel congue. Vivamus maximus posuere fringilla. Nullam in est commodo, tristique ligula eu, tincidunt enim. Duis iaculis sodales lectus vitae cursus.</p>
+                      </div>
+                      <div class="tab-pane fade" id="productivity" role="tabpanel">
+                          <h1>Productivity</h1>
+                          <p>Ut eget lectus tristique, tempus purus sit amet, porta augue. Mauris lobortis sem nec augue ultricies blandit. Nullam sed sem venenatis, pretium urna eget, scelerisque dolor. Morbi nec volutpat leo, quis faucibus tortor. Aenean vel rutrum mauris. Pellentesque lectus massa, tincidunt quis leo non, sodales sagittis nulla. Proin interdum est at nulla laoreet, pulvinar pretium nisl rutrum. In vel elit a risus rhoncus accumsan vulputate non sapien. Sed et rhoncus velit. Nunc commodo augue fermentum, hendrerit neque at, ullamcorper arcu. Nulla tincidunt orci a lectus efficitur elementum. Donec molestie urna vestibulum augue placerat faucibus. In vitae orci vel mauris cursus viverra ac sit amet nisl. Phasellus odio tortor, ullamcorper eget ullamcorper eget, molestie eget justo. Integer elementum purus eget arcu fermentum tincidunt. Nullam erat tellus, dictum sit amet nisi eu, rutrum fermentum odio.</p>
+                      </div>
+                      <div class="tab-pane fade" id="communications" role="tabpanel">
+                          <h1>Communications</h1>
+                          <p>Ut eget lectus tristique, tempus purus sit amet, porta augue. Mauris lobortis sem nec augue ultricies blandit. Nullam sed sem venenatis, pretium urna eget, scelerisque dolor. Morbi nec volutpat leo, quis faucibus tortor. Aenean vel rutrum mauris. Pellentesque lectus massa, tincidunt quis leo non, sodales sagittis nulla. Proin interdum est at nulla laoreet, pulvinar pretium nisl rutrum. In vel elit a risus rhoncus accumsan vulputate non sapien. Sed et rhoncus velit. Nunc commodo augue fermentum, hendrerit neque at, ullamcorper arcu. Nulla tincidunt orci a lectus efficitur elementum. Donec molestie urna vestibulum augue placerat faucibus. In vitae orci vel mauris cursus viverra ac sit amet nisl. Phasellus odio tortor, ullamcorper eget ullamcorper eget, molestie eget justo. Integer elementum purus eget arcu fermentum tincidunt. Nullam erat tellus, dictum sit amet nisi eu, rutrum fermentum odio.</p>
+                      </div>
+                      <div class="tab-pane fade" id="collaboration" role="tabpanel">
+                          <h1>Collaboration</h1>
+                          <p>Ut eget lectus tristique, tempus purus sit amet, porta augue. Mauris lobortis sem nec augue ultricies blandit. Nullam sed sem venenatis, pretium urna eget, scelerisque dolor. Morbi nec volutpat leo, quis faucibus tortor. Aenean vel rutrum mauris. Pellentesque lectus massa, tincidunt quis leo non, sodales sagittis nulla. Proin interdum est at nulla laoreet, pulvinar pretium nisl rutrum. In vel elit a risus rhoncus accumsan vulputate non sapien. Sed et rhoncus velit. Nunc commodo augue fermentum, hendrerit neque at, ullamcorper arcu. Nulla tincidunt orci a lectus efficitur elementum. Donec molestie urna vestibulum augue placerat faucibus. In vitae orci vel mauris cursus viverra ac sit amet nisl. Phasellus odio tortor, ullamcorper eget ullamcorper eget, molestie eget justo. Integer elementum purus eget arcu fermentum tincidunt. Nullam erat tellus, dictum sit amet nisi eu, rutrum fermentum odio.</p>
+                      </div>
+                      <div class="tab-pane fade" id="news" role="tabpanel">
+                          <h1>News</h1>
+                          <p>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p>
+                      </div>
+                      <div class="tab-pane fade" id="projects" role="tabpanel">
+                          <h1>projects</h1>
+                          <p>Aenean pharetra risus quis placerat euismod. Praesent mattis lorem eget massa euismod sollicitudin. Donec porta nulla ut blandit vehicula. Mauris sagittis lorem nec mauris placerat, et molestie elit vehicula. Donec libero ex, condimentum et mi dapibus, euismod ornare ligula.</p>
+                          <p>In faucibus tempus ante, et tempor magna luctus id. Ut a maximus ipsum. Duis eu velit nec libero pretium pellentesque. Maecenas auctor hendrerit pulvinar. Donec sed tortor interdum, sodales elit vel, tempor turpis. In tristique vestibulum eros vel congue. Vivamus maximus posuere fringilla. Nullam in est commodo, tristique ligula eu, tincidunt enim. Duis iaculis sodales lectus vitae cursus.</p>
+                      </div>
+                      <div class="tab-pane fade" id="analytics" role="tabpanel">
+                          <h1>Analytics</h1>
+                          <p>Ut eget lectus tristique, tempus purus sit amet, porta augue. Mauris lobortis sem nec augue ultricies blandit. Nullam sed sem venenatis, pretium urna eget, scelerisque dolor. Morbi nec volutpat leo, quis faucibus tortor. Aenean vel rutrum mauris. Pellentesque lectus massa, tincidunt quis leo non, sodales sagittis nulla. Proin interdum est at nulla laoreet, pulvinar pretium nisl rutrum. In vel elit a risus rhoncus accumsan vulputate non sapien. Sed et rhoncus velit. Nunc commodo augue fermentum, hendrerit neque at, ullamcorper arcu. Nulla tincidunt orci a lectus efficitur elementum. Donec molestie urna vestibulum augue placerat faucibus. In vitae orci vel mauris cursus viverra ac sit amet nisl. Phasellus odio tortor, ullamcorper eget ullamcorper eget, molestie eget justo. Integer elementum purus eget arcu fermentum tincidunt. Nullam erat tellus, dictum sit amet nisi eu, rutrum fermentum odio.</p>
+                      </div>
+                      <div class="tab-pane fade" id="approvals" role="tabpanel">
+                          <h1>Approvals</h1>
+                          <p>Aliquam hendrerit nunc vitae nisi efficitur, eu porta sem aliquam. Aenean tincidunt mi sed mi sodales bibendum. Proin dolor ipsum, mollis venenatis velit eu, iaculis laoreet mi. Mauris eget egestas felis, sit amet finibus nunc. Aliquam non dui sit amet erat auctor mollis ac eget ante. Quisque at quam augue. Nulla dignissim, augue nec cursus consequat, mi nulla efficitur augue, vel fringilla turpis quam eu nunc. Quisque rutrum vehicula lacus sodales molestie. Mauris vel felis sit amet erat maximus cursus ut a velit. In hac habitasse platea dictumst. Vestibulum vel neque sit amet nisl finibus fermentum.</p>
+                      </div>
+                  </div>
+              </div>
+          <!-- </div> -->
+      </div>
+  </div>
+</section>

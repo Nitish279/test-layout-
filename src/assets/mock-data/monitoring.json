@@ -1,0 +1,44 @@
+{
+  "monitoring": [
+          {
+            "icon": "car",
+            "iconTitle": "commitment Authority",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "binoculars",
+            "iconTitle": "Cash Arrears",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "calendar",
+            "iconTitle": "Comprehensive",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "building",
+            "iconTitle": "Contributions",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "file",
+            "iconTitle": "IOC",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "cart-arrow-down",
+            "iconTitle": "Locations",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "plane",
+            "iconTitle": "Operations",
+            "url": "https://google.com"
+          },
+          {
+            "icon": "check",
+            "iconTitle": "Dashboard",
+            "url": "https://google.com"
+          }
+      ]
+}
