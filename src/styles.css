@@ -209,6 +209,10 @@ opacity: 1;
   padding: 3rem 0 0;
 }
 
+.main_left_nav{
+  padding: 0 1rem;
+}
+
 .take_a_tour_blk a h6,
 .sub_header_right ul li{
   display: inline-block;
@@ -279,9 +283,8 @@ opacity: 1;
 
 
 #mainContainer .nav-tabs .nav-link span{
-  /* display: block; */
-  padding-top: 0.2rem;
-  /* transition: all 5s ease-out; */
+  word-spacing: 0.2rem;
+  padding: 0.2rem 1rem 0 1rem;
 }
 
 #mainContainer .nav-tabs{
@@ -565,6 +568,13 @@ height: 28px;
   }
   .header_left_menu ul li {
       padding: 0.4rem 0.3rem;
+  }
+  
+}
+
+@media (max-width: 1023px) {
+  footer{
+    display: none;
   }
 }
 
