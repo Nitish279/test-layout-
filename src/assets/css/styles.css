@@ -337,7 +337,7 @@ a.old-intranet:hover {
   overflow: hidden;
   background-color: #ffffff;
   width: 100%;
-  height: 190px;
+  /* height: 190px; */
   border-bottom: 3px solid #e7eaec;
   margin-top: -40px;
 }

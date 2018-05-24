@@ -53,6 +53,15 @@ $(function () {
     }
   });
 
+    var leftNavInitialHeight = $('.main_left_nav .nav.nav-tabs').height();
+    var leftNavcontentHeight = $('.tab-content').height();
+
+    if(leftNavInitialHeight < leftNavcontentHeight){
+        $('.main_left_nav .nav.nav-tabs').height(leftNavcontentHeight);
+    }
+  
+
+
   // binding golbal search event - ends
 });
 

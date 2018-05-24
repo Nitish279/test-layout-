@@ -22,6 +22,7 @@ body a:hover{
 .tab-content{
   padding: 0.5rem;
   transition: 500ms;
+  margin-left: -6%;
 }
 .navbar {
   background-color:#5c6d78;
@@ -206,7 +207,7 @@ opacity: 1;
 
 .sub_header_right {
   text-align: right;
-  padding: 3rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .main_left_nav{
@@ -248,14 +249,14 @@ opacity: 1;
 
 /* main Content  */
 #mainContainer{
-  padding-bottom: 6.36rem;
+  /* padding-bottom: 6.36rem; */
 }
 
 #mainContainer .list_expand_menu{
   /* margin: 1.3em 0; */
   padding: 1.8rem 0;
   cursor: pointer;
-  width: 100%;
+  width: 108px;
   transition: width 500ms;
 }
 
@@ -288,11 +289,13 @@ opacity: 1;
 }
 
 #mainContainer .nav-tabs{
-  display: block;
-  border-bottom: none;
-  width: 100%;
-  margin-left: 0;
-  transition: width 500ms;
+    display: block;
+    border-bottom: none;
+    margin-left: 0;
+    width: 108px;
+    transition: width 500ms;
+    min-height: 900px;
+    background-color: #45545f;
 }
 
 #mainContainer .nav-tabs.expand{
@@ -476,9 +479,9 @@ height: 28px;
 }
 
 .rotate.down{
-  -moz-transform:rotate(-90deg);
-  -webkit-transform:rotate(-90deg);
-  transform:rotate(-90deg);
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
 }
 
 /* .sub_header_right{
@@ -513,6 +516,7 @@ height: 28px;
   }
 
   .asdfgh_block{
+    display: none;
     padding-top: 0;
   }
 
@@ -575,6 +579,9 @@ height: 28px;
 @media (max-width: 1023px) {
   footer{
     display: none;
+  }
+  .tab-content {
+    margin-left: -3%;
   }
 }
 
@@ -670,7 +677,11 @@ height: 28px;
   }
 
   #mainContainer {
-      padding-bottom: 9rem;
+      /* padding-bottom: 9rem; */
+  }
+
+  .tab-content {
+    margin-left: -10%;
   }
 
 }
@@ -816,6 +827,9 @@ height: 28px;
 .footer-menu.contact li:first-child{
   padding-bottom: 0.4rem;
 }
+.tab-content {
+  margin-left: 0;
+}
 }
 
 
@@ -823,6 +837,8 @@ height: 28px;
   .main_left_nav{
     position: absolute;
     z-index: 1;
+    top: 66px;
+    left: -16px;
   }
 
   .asdfgh_block ul li{
@@ -837,5 +853,12 @@ height: 28px;
   .sub_header_right ul li {
     padding: 0 1rem;
   }
+}
+
+
+@media (max-width: 320px) {
+  .sub_header_left {
+    padding-top: 0rem;
+}
 }
 /* You can add global styles to this file, and also import other style files */
