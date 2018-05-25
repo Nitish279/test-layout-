@@ -523,6 +523,7 @@ height: 28px;
   .asdfgh_block{
     display: none;
     padding-top: 0;
+    margin-bottom: 1rem;
   }
 
   .asdfgh_block ul{

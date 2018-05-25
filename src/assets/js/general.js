@@ -91,12 +91,12 @@ $(function () {
       $('.main_left_nav').removeClass('hide_ele');
     }
 
-    if($(window).width() > 768){
-      $('.asdfgh_block').css('display', 'none');
-      if ($('#toggleBtnSubNavItem').hasClass("down")) {
-        $('#toggleBtnSubNavItem').removeClass('down');
-      }
-    }
+    // if($(window).width() > 768){
+    //   $('.asdfgh_block').css('display', 'none');
+    //   if ($('#toggleBtnSubNavItem').hasClass("down")) {
+    //     $('#toggleBtnSubNavItem').removeClass('down');
+    //   }
+    // }
   });
 
   var leftNavInitialHeight = $('.main_left_nav .nav.nav-tabs').height();
