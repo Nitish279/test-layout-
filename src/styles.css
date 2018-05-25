@@ -191,6 +191,10 @@ opacity: 1;
   padding-left: 0;
 }
 
+.breadcrumb li{
+  color: #028ae4;
+}
+
 .breadcrumb_block .breadcrumb-right-arrow .breadcrumb-item+.breadcrumb-item::before {
   content: "›";
   vertical-align:top;
@@ -506,6 +510,7 @@ height: 28px;
   .breadcrumb_title_block h4{
     margin-bottom: 0;
     margin: 2rem 1rem 1rem 0;
+    text-transform: capitalize;
   }
 
   .toggle_btn_sub_nav_item a{
@@ -545,6 +550,7 @@ height: 28px;
     text-transform: capitalize;
     border-bottom: 2px solid transparent;
   }
+
   .asdfgh_block ul li a.nav-link:after {
     display:block;
     content: '';
@@ -573,7 +579,7 @@ height: 28px;
   .header_left_menu ul li {
       padding: 0.4rem 0.3rem;
   }
-  
+
 }
 
 @media (max-width: 1023px) {
@@ -643,7 +649,7 @@ height: 28px;
   }
 
   .sub_header_right ul li.take_a_tour_blk h6 {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
   }
 
   .sub_header_right ul li i {
@@ -652,14 +658,18 @@ height: 28px;
   }
 
   .sub_header_right ul li {
-      padding: 0 0.3rem 0 0.6rem;
+      padding: 0 0.2rem 0 0.4rem;
       margin: 1.5em 0;
   }
 
   .sub_header_right ul li h6 {
       padding-top: 0.1rem;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
   }
+
+  .breadcrumb li {
+    font-size: 0.8rem;
+}
 
   .breadcrumb_title_block h1 {
       margin-top: 0rem;
@@ -699,7 +709,7 @@ height: 28px;
     padding-bottom: 1rem;
   }
   .breadcrumb_block .breadcrumb {
-      padding: 1.5rem 0 1.5rem;
+      padding: 0rem 0 1.5rem;
       margin: 0;
   }
   .breadcrumb_title_block{
@@ -796,13 +806,43 @@ height: 28px;
   word-spacing: 0.1rem;
   font-weight: 600;
 }
+
+
+.breadcrumb li {
+  font-size: 0.9rem;
+}
 /* .sub_header_right ul li:last-child {
   padding-right: 3rem;
 } */
 .main_left_nav{
   position: absolute;
   z-index: 1;
+  position: absolute;
+  z-index: 1;
+  top: 2.5rem;
+  left: -1rem;
+  z-index: 9999;
 }
+
+.main_left_nav,
+#mainContainer .list_expand_menu,
+#mainContainer .nav-tabs{
+  width: 0;
+  transition: 0.3s;
+}
+
+.main_left_nav.active{
+  width: 160px;
+}
+
+#mainContainer .list_expand_menu.active,
+#mainContainer .nav-tabs.active{
+  width: 100%;
+}
+
+/* #mainContainer .list_expand_menu{
+  width: 0;
+} */
 
 .main_left_nav{
   /* display: none; */
@@ -839,7 +879,12 @@ height: 28px;
     z-index: 1;
     top: 66px;
     left: -16px;
+    z-index: 9999;
   }
+
+  .breadcrumb_block .breadcrumb {
+    padding:  1.5rem 0;
+}
 
   .asdfgh_block ul li{
     padding: 0 0.6rem;
@@ -855,10 +900,22 @@ height: 28px;
   }
 }
 
+@media (max-width: 375px) {
+  .breadcrumb_block .breadcrumb {
+    padding: 1.5rem 0 3rem;
+  }
+  .breadcrumb li {
+    font-size: 1rem;
+  }
+}
 
 @media (max-width: 320px) {
   .sub_header_left {
     padding-top: 0rem;
+  }
+  .breadcrumb_block .breadcrumb {
+    padding: 1rem 0 1.5rem;
+    margin-bottom: 2rem;
 }
 }
 /* You can add global styles to this file, and also import other style files */

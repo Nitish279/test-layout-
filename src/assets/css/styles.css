@@ -53,14 +53,14 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0px 1rem;
       line-height: 1.15;
       position: relative;
-      
+
   }
 
   .top-header .nav-link {
       color: #fff;
       font-size: 14px;
       letter-spacing: 0.5px;
-      
+
   }
     .navbar-brand{
       font-size: 18px;
@@ -214,6 +214,23 @@ a.old-intranet:hover {
   padding: 12px;
 }
 
+#body_overlay {
+  width: 0;
+  background: #000 !important;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.7;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+#body_overlay.active{
+  width: 100%;
+}
+
 #gh_overlay {
   background: #000 !important;
   position: fixed;
@@ -288,23 +305,23 @@ a.old-intranet:hover {
         margin-top: -200px;
         z-index: 1020;
     }
-    
+
         #headerSearchDiv.active {
             margin-top: 0px;
         }
-    
+
     @media (max-width: 576px) {
         #headerSearchDiv {
             margin-right: 0px;
         }
     }
-    
+
     @media (max-width: 360px) {
         #headerSearchDiv {
             top: 72px;
         }
     }
-    
+
     #headerSearchDiv a,
     #headerSearchDiv a:hover,
     #headerSearchDiv a:focus,
@@ -316,18 +333,18 @@ a.old-intranet:hover {
         font-weight: 600;
         color: #ccc;
     }
-    
+
     #headerSearchTxt {
         font-size: 13px;
         border: none;
         background: #fff;
     }
-    
+
         #headerSearchTxt:focus {
             box-shadow: none;
             border: none;
         }
-    
+
 
 /*subheader*/
 
@@ -459,7 +476,7 @@ a.old-intranet:hover {
 }
 
 #mainContainer .nav-tabs .nav-link span{
-  display: block; 
+  display: block;
   padding-top: 0.2rem;
   text-transform: uppercase;
   font-size: 11px;
@@ -609,7 +626,7 @@ h4 .header-title{
           #header_content .active a:before {
             opacity: 1;
             width: 100%;
-            
+
          }
 }
 
@@ -657,7 +674,7 @@ h4 .header-title{
   #header-content {
     font-family: "Open Sans",sans-serif;
 }
-/* 
+/*
 
 .header_block{
   margin: 1rem auto;
@@ -698,7 +715,7 @@ h4 .header-title{
   .container {
       margin: 0 auto;
   }
-  
+
 }
 
 
@@ -835,54 +852,54 @@ footer {
     width: 100%;
     opacity: 1;
   }
-  
+
   footer a,
   footer a:hover {
   color: #d3dde6 !important;
   text-decoration: none;
   }
-  
+
   .footer-menu,
   .fleft-menu {
   list-style: none;
   margin-bottom: 8px;
   padding: 0px;
   }
-  
+
   .footer-menu li {
   display: inline-block;
   padding: 0 11px 0 7px;
   border-right: 1px solid #c3c3c3;
   line-height: 1.25;
   }
-  
+
   .footer-menu li:last-child {
   border-right: 0;
   padding-right: 0;
   }
-  
+
   .footer-menu li:first-child {
   padding-left: 0;
   }
-  
+
   footer .line-sep {
   height: 1px;
   overflow: hidden;
   background-color: #71828c;
   margin: 10px -15px;
   }
-  
+
   .footer-menu.contact {
   margin-top: 5px;
   margin-bottom: 0;
   }
-  
+
   .footer-menu li.f-label {
   font-weight: 600;
   border-right: 0;
   padding-right: 0;
   }
-  
+
   .footer-logo {
   background-position: 0 -22px;
   width: 130px;
