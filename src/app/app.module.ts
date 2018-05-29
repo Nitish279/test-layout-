@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from'@angular/http';
+import { HttpModule } from '@angular/http';
 import { ModuleWithProviders } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DashboardModule } from './dashboard/dashboard.module';
 import { SharedModule } from './shared/shared.module';
 
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { HeaderComponent } from './shared/layout/header/header.component';
-import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+// import { SidebarComponent } from './shared/layout/sidebar/sidebar.component';
+import { SubheaderComponent } from './shared/layout/subheader/subheader.component';
+import { LeftnavbarComponent } from './shared/layout/leftnavbar/leftnavbar.component';
+import { LeftnavbarcontentComponent } from './shared/layout/leftnavbarcontent/leftnavbarcontent.component';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
@@ -21,14 +22,16 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    SidebarComponent
+    // SidebarComponent,
+    SubheaderComponent,
+    LeftnavbarComponent,
+    LeftnavbarcontentComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
     HttpModule,
-    DashboardModule,
     SharedModule,
     rootRouting
   ],

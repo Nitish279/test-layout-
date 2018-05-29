@@ -70,7 +70,7 @@ $(function () {
   $('.asdfgh_block ul li a').each(function() {
     if($( this ).hasClass('active')){
       $('#subHeaderItem').text($( this ).text());
-      $('#subHeaderTitle').text($( this ).text());
+      // $('#subHeaderTitle').text($( this ).text());
     };
   });
   $('.main_left_nav .nav-tabs li a').each(function() {
