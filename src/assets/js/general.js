@@ -16,14 +16,14 @@ $(function () {
   });
 //binding navbar toggler - ends
   $('#toggleBtnLeftNav').click(function(){
-    $("#body_overlay").addClass('active');
+    $("#gh_overlay").addClass('active');
     $('.main_left_nav').addClass('active');
     $('#mainContainer .list_expand_menu').addClass('active');
     $('#mainContainer .nav-tabs').addClass('active');
     $('#expand-menu, #mainContainer .nav-tabs .nav-link').css('display', 'block');
   });
 
-  $('#body_overlay').click(function(){
+  $('#gh_overlay').click(function(){
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $('.main_left_nav').removeClass('active');
@@ -81,11 +81,12 @@ $(function () {
 
   $('.asdfgh_block ul li a').click(function() {
     $('#subHeaderItem').text($( this ).text());
-    $('#subHeaderTitle').text($( this ).text());
+    // $('#subHeaderTitle').text($( this ).text());
   });
 
   $('.main_left_nav .nav-tabs li a').click(function() {
     $('#leftNavItem').text($( this ).text());
+    $('#subHeaderTitle').text($( this ).text());
   });
 
   $(window).resize(function(){
@@ -93,17 +94,23 @@ $(function () {
       $('.main_left_nav').removeClass('hide_ele');
     }
 
-    $('#body_overlay').removeClass('active');
+    $('#gh_overlay').removeClass('active');
     $('.main_left_nav').removeClass('active');
       $('#mainContainer .list_expand_menu').removeClass('active');
       $('#mainContainer .nav-tabs').removeClass('active');
-      $('#expand-menu, #mainContainer .nav-tabs .nav-link, .asdfgh_block').css('display', 'none');
-      $('.rotate').removeClass('down');
+      // $('#expand-menu, #mainContainer .nav-tabs .nav-link, .asdfgh_block').css('display', 'none');
+      // $('.rotate').removeClass('down');
 
       if($(window).width() >= 768){
+        // $('#expand-menu, #mainContainer .nav-tabs .nav-link, .asdfgh_block').css('display', 'block');
+        // $('.rotate').addClass('down');
         $('#expand-menu, #mainContainer .nav-tabs .nav-link').css('display', 'block');
       }
 
+      if($(window).width() < 768){
+        // $('#expand-menu, #mainContainer .nav-tabs .nav-link, .asdfgh_block').css('display', 'none');
+        // $('.rotate').removeClass('down');
+      }
     // if($(window).width() > 768){
     //   $('.asdfgh_block').css('display', 'none');
     //   if ($('#toggleBtnSubNavItem').hasClass("down")) {
