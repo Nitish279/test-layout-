@@ -21,9 +21,13 @@
             </div>
             <div id="qwerty" class="asdfgh_block">
               <ul class="list-unstyled" >
-                <li class="nav-item"><a class="nav-link active" href="#">monitoring</a></li>
+                <!-- <li class="nav-item"><a class="nav-link active" href="#">monitoring</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">transactions</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">reports</a></li> -->
+
+                <li class="nav-item" *ngFor="let data of subHeaderData">
+                    <a routerLinkActive="active" class="nav-link" routerLink={{data.id}}>{{data.id}}</a>
+                  </li>
               </ul>
             </div>
               <!-- <h4 class="header-title">IDA Desk</h4>
