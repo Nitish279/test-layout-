@@ -75,7 +75,7 @@ $(function () {
   });
   $('.main_left_nav .nav-tabs li a').each(function() {
     if($( this ).hasClass('active')){
-      $('#leftNavItem').text($( this ).text());
+      // $('#leftNavItem').text($( this ).text());
     };
   });
 

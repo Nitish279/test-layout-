@@ -2,43 +2,43 @@
   "monitoring": [
           {
             "icon": "car",
-            "iconTitle": "commitment Authority",
-            "url": "https://google.com"
+            "iconTitle": "Commitment Authority",
+            "url": "/monitoring/commitment-authority"
           },
           {
             "icon": "binoculars",
-            "iconTitle": "Cash Arrears",
-            "url": "https://google.com"
+            "iconTitle": "Productivity",
+            "url": "/monitoring/productivity"
           },
           {
             "icon": "calendar",
-            "iconTitle": "Comprehensive",
-            "url": "https://google.com"
+            "iconTitle": "Communications",
+            "url": "/monitoring/communications"
           },
           {
             "icon": "building",
-            "iconTitle": "Contributions",
-            "url": "https://google.com"
+            "iconTitle": "Collaboration",
+            "url": "/monitoring/collaboration"
           },
           {
             "icon": "file",
-            "iconTitle": "IOC",
-            "url": "https://google.com"
+            "iconTitle": "News",
+            "url": "/monitoring/news"
           },
           {
             "icon": "cart-arrow-down",
-            "iconTitle": "Locations",
-            "url": "https://google.com"
+            "iconTitle": "Projects",
+            "url": "/monitoring/projects"
           },
           {
             "icon": "plane",
-            "iconTitle": "Operations",
-            "url": "https://google.com"
+            "iconTitle": "Analytics",
+            "url": "/monitoring/analytics"
           },
           {
             "icon": "check",
-            "iconTitle": "Dashboard",
-            "url": "https://google.com"
+            "iconTitle": "Approvals",
+            "url": "/monitoring/approvals"
           }
       ]
 }

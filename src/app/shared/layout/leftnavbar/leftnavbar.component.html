@@ -4,17 +4,21 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </a>
 </div>
-<ul class="nav nav-tabs" role="navigation">
-    <!-- <div *ngFor="let data of monitoringData">
-    <li class="nav-item">
-        <a href="#OneSpace" class="nav-link active" aria-controls="">
+
+
+<ul class="sidebar_nav_tabs list-unstyled nav nav-tabs">
+  <div *ngFor="let data of sidebarData">
+    <li class="sidebar_nav_item">
+        <a routerLink={{data.url}} routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab" aria-controls="">
         <i class="fa fa-{{data.icon}}" aria-hidden="true"></i>
         <span class="left_nav_txt_hidden">{{data.iconTitle}}</span>
         </a>
     </li>
-  </div> -->
+  </div>
+</ul>
+<!-- <ul class="nav nav-tabs" role="navigation">
     <li class="nav-item">
-      <a href="#" class="nav-link active" aria-controls="">
+      <a href="#commitment-authority" class="nav-link active" aria-controls="">
       <i class="fa fa-car" aria-hidden="true"></i>
       <span class="left_nav_txt_hidden">commitment Authority</span>
       </a>
@@ -61,4 +65,4 @@
         <span class="left_nav_txt_hidden">Approvals</span>
         </a>
     </li>
-</ul>
+</ul> -->

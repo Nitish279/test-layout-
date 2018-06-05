@@ -19,6 +19,17 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { ReportsComponent } from './reports/reports.component';
 
 
+
+import { AnalyticsComponent } from './shared/layout/leftnavbarcontent/analytics/analytics.component';
+import { ApprovalsComponent } from './shared/layout/leftnavbarcontent/approvals/approvals.component';
+import { CollaborationComponent } from './shared/layout/leftnavbarcontent/collaboration/collaboration.component';
+import { CommunicationsComponent } from './shared/layout/leftnavbarcontent/communications/communications.component';
+import { NewsComponent } from './shared/layout/leftnavbarcontent/news/news.component';
+import { CommitmentAuthorityComponent } from './shared/layout/leftnavbarcontent/commitment-authority/commitment-authority.component';
+import { ProductivityComponent } from './shared/layout/leftnavbarcontent/productivity/productivity.component';
+import { ProjectsComponent } from './shared/layout/leftnavbarcontent/projects/projects.component';
+
+
 // import { MonitoringComponent } from './monitoring/monitoring.component'
 
 
@@ -30,6 +41,40 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
     path: 'monitoring',
     component: MonitoringComponent,
+    children: [
+      {
+        path: 'commitment-authority',
+        component: CommitmentAuthorityComponent
+      },
+      {
+        path: 'productivity',
+        component: ProductivityComponent
+      },
+      {
+        path: 'communications',
+        component: CommunicationsComponent
+      },
+      {
+        path: 'collaboration',
+        component: CollaborationComponent
+      },
+      {
+        path: 'news',
+        component: NewsComponent
+      },
+      {
+        path: 'projects',
+        component: ProjectsComponent
+      },
+      {
+        path: 'analytics',
+        component: AnalyticsComponent
+      },
+      {
+        path: 'approvals',
+        component: ApprovalsComponent
+      }
+    ]
   },
   {
     path: 'reports',
@@ -52,7 +97,15 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     LeftnavbarcontentComponent,
     MonitoringComponent,
     TransactionsComponent,
-    ReportsComponent
+    ReportsComponent,
+    AnalyticsComponent,
+    ApprovalsComponent,
+    CollaborationComponent,
+    CommunicationsComponent,
+    NewsComponent,
+    CommitmentAuthorityComponent,
+    ProductivityComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
