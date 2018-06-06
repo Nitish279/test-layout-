@@ -349,14 +349,12 @@ a.old-intranet:hover {
 /*subheader*/
 
 #subHeader{
-  font-family: Andes, "Open Sans";
-  padding: 10px 10px 0;
-  overflow: hidden;
-  background-color: #ffffff;
-  width: 100%;
-  /* height: 190px; */
-  border-bottom: 3px solid #e7eaec;
-  margin-top: -40px;
+    font-family: Andes, "Open Sans";
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e7eaec;
 }
 
 .sub_header_left,

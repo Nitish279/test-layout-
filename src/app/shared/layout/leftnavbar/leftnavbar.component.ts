@@ -5,12 +5,12 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
+
 @Component({
   selector: 'app-leftnavbar',
   templateUrl: './leftnavbar.component.html',
   styleUrls: ['./leftnavbar.component.css']
 })
-
 
 @Injectable()
 export class LeftnavbarComponent implements OnInit {

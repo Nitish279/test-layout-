@@ -10,6 +10,7 @@ import { NewsComponent } from './leftnavbarcontent/news/news.component';
 import { ProjectsComponent } from './leftnavbarcontent/projects/projects.component';
 import { AnalyticsComponent } from './leftnavbarcontent/analytics/analytics.component';
 import { ApprovalsComponent } from './leftnavbarcontent/approvals/approvals.component';
+import { LeftnavbarNavitemComponent } from './leftnavbar/leftnavbar-navitem/leftnavbar-navitem.component';
 // import { FooterComponent } from './footer/footer.component';
 // import { SidebarComponent } from './sidebar/sidebar.component';
 // import { SubheaderComponent } from './subheader/subheader.component';
@@ -22,7 +23,7 @@ import { ApprovalsComponent } from './leftnavbarcontent/approvals/approvals.comp
     CommonModule
   ],
   declarations: [
-    LayoutComponent, HeaderComponent, CommitmentAuthorityComponent, ProductivityComponent, CommunicationsComponent, CollaborationComponent, NewsComponent, ProjectsComponent, AnalyticsComponent, ApprovalsComponent,
+    LayoutComponent, HeaderComponent, CommitmentAuthorityComponent, ProductivityComponent, CommunicationsComponent, CollaborationComponent, NewsComponent, ProjectsComponent, AnalyticsComponent, ApprovalsComponent, LeftnavbarNavitemComponent,
     // FooterComponent, SidebarComponent,
     // SubheaderComponent,
     // LeftnavbarComponent, LeftnavbarcontentComponent

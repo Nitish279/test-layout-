@@ -176,8 +176,8 @@ opacity: 1;
 }
 
 #subHeader{
-  background-color: #ffffff;
-  border-bottom: 3px solid #e7eaec;
+  /* background-color: #ffffff;
+  border-bottom: 3px solid #e7eaec; */
 }
 
 .sub_header_left,
@@ -187,8 +187,9 @@ opacity: 1;
 
 .breadcrumb_block .breadcrumb {
   background-color: transparent;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
 .breadcrumb li{
@@ -196,10 +197,16 @@ opacity: 1;
 }
 
 .breadcrumb_block .breadcrumb-right-arrow .breadcrumb-item+.breadcrumb-item::before {
-  content: "›";
   vertical-align:top;
-  font-size:40px;
-  line-height:15px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.breadcrumb_block .breadcrumb-right-arrow .breadcrumb-item+.breadcrumb-item::before {
+  content: "";
+}
+.breadcrumb_block .breadcrumb-right-arrow .breadcrumb-item+.breadcrumb-item.special::before{
+  content: "/";
 }
 
 .breadcrumb_title_block h1{
@@ -216,6 +223,10 @@ opacity: 1;
 
 .main_left_nav{
   padding: 0 1rem;
+}
+
+.sidebar_nav_item{
+  border-bottom: 1px solid #344450;
 }
 
 .take_a_tour_blk a h6,

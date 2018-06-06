@@ -29,6 +29,8 @@ import { CommitmentAuthorityComponent } from './shared/layout/leftnavbarcontent/
 import { ProductivityComponent } from './shared/layout/leftnavbarcontent/productivity/productivity.component';
 import { ProjectsComponent } from './shared/layout/leftnavbarcontent/projects/projects.component';
 
+import { LeftnavbarNavitemComponent } from './shared/layout/leftnavbar/leftnavbar-navitem/leftnavbar-navitem.component';
+
 
 // import { MonitoringComponent } from './monitoring/monitoring.component'
 
@@ -41,6 +43,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
   {
     path: 'monitoring',
     component: MonitoringComponent,
+    data: {title: 'monitoring'},
     children: [
       {
         path: 'commitment-authority',
@@ -105,7 +108,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([
     NewsComponent,
     CommitmentAuthorityComponent,
     ProductivityComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LeftnavbarNavitemComponent
   ],
   imports: [
     BrowserModule,
