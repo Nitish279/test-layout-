@@ -3,37 +3,37 @@
        {
           "icon": "car",
           "iconTitle": "All Transactions",
-          "url": "https://google.com"
+          "url": "/transactions/all-transactions"
         },
         {
           "icon": "binoculars",
           "iconTitle": "Commitment",
-          "url": "https://google.com"
+          "url": "/transactions/commitment"
         },
         {
           "icon": "calendar",
           "iconTitle": "Payment",
-          "url": "https://google.com"
+          "url": "/transactions/payment"
         },
         {
           "icon": "building",
           "iconTitle": "Billing",
-          "url": "https://google.com"
+          "url": "/transactions/billing"
         },
         {
           "icon": "file",
           "iconTitle": "Replenishment",
-          "url": "https://google.com"
+          "url": "/transactions/replenishment"
         },
         {
           "icon": "file",
           "iconTitle": "RFP",
-          "url": "https://google.com"
+          "url": "/transactions/rfp"
         },
         {
           "icon": "file",
           "iconTitle": "Utilities",
-          "url": "https://google.com"
+          "url": "/transactions/"
         }
       ]
 }

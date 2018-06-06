@@ -4,38 +4,38 @@
        {
           "icon": "car",
           "iconTitle": "All Reports",
-          "url": "https://google.com"
+          "url": "/reports/all-reports"
         },
         {
           "icon": "binoculars",
           "iconTitle": "status",
-          "url": "https://google.com"
+          "url": "/reports/status"
         },
         {
           "icon": "calendar",
           "iconTitle": "MDRI",
-          "url": "https://google.com"
+          "url": "/reports/mdri"
         },
         {
           "icon": "building",
           "iconTitle": "Commitment Authority",
-          "url": "https://google.com"
+          "url": "/reports/commitment-authority"
         },
         {
           "icon": "file",
           "iconTitle": "General",
-          "url": "https://google.com"
+          "url": "/reports/general"
         },
        
         {
           "icon": "calender",
           "iconTitle": "IDA Operations",
-          "url": "https://google.com"
+          "url": "/reports/ida-operations"
         },
         {
           "icon": "calender",
           "iconTitle": "IDA Monthly Dashboard",
-          "url": "https://google.com"
+          "url": "/reports/ida-monthly-dashboard"
         }
         
       ]
